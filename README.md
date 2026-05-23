@@ -26,6 +26,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+Live URL : https://reserveflow-tau.vercel.app/
+
 ## Environment variables
 
 | Variable | Required | Description |
@@ -38,16 +40,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `NODE_ENV` | No | `development` \| `test` \| `production` |
 | `SKIP_ENV_VALIDATION` | No | Set `true` for CI builds without live services |
 
-### Vercel deployment
 
-1. Create a Vercel project linked to this repository.
-2. Add **Supabase** (or Neon) → set `DATABASE_URL` (pooler) and `DIRECT_URL` (direct).
-3. Create an **Upstash Redis** database via Vercel Marketplace → auto-injects `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`.
-4. Deploy. Prisma client is generated on `postinstall`.
-
-```bash
-npm run build
-```
 
 ## Architecture overview
 
